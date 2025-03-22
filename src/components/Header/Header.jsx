@@ -14,17 +14,17 @@ export default function Header() {
         <img src="/appicon.png" alt="store icon" />
         <div className={styles.search}>
           <input type="text" placeholder="Search" />
-          <Icon path={mdiMagnify} size={1} />
+          <Icon path={mdiMagnify} size={1} color="var(--icon-color)" />
         </div>
         <div className={styles.icons}>
-          <Icon path={mdiCart} size={1} />
-          <Icon path={mdiBell} size={1} />
-          <Icon path={mdiInformation} size={1} />
-          <Icon path={mdiFaceManProfile} size={1} />
+          <Icon path={mdiCart} size={1} color="var(--icon-color)" />
+          <Icon path={mdiBell} size={1} color="var(--icon-color)" />
+          <Icon path={mdiInformation} size={1} color="var(--icon-color)" />
+          <Icon path={mdiFaceManProfile} size={1} color="var(--icon-color)" />
         </div>
       </div>
       <div className={styles.bottomBar}>
-        <Icon path={mdiMenu} size={1} />
+        <Icon path={mdiMenu} size={1} color="var(--icon-color)" />
         <a href="">Categories</a>
         <a href="">Bestsellers</a>
         <a href="">Inspirations</a>
