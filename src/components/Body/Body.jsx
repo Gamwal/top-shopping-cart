@@ -1,5 +1,5 @@
 import styles from "./Body.module.css";
 
 export default function Body() {
-  return <div>Body</div>;
+  return <div className={styles.body}>Body</div>;
 }

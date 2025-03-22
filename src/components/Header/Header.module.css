@@ -1,12 +1,53 @@
-.bar {
+:root {
+  --accent-color: rgb(225, 225, 225);
+}
+.header {
+  border-radius: 4px;
+  box-shadow: -1px 5px 15px var(--accent-color);
+  margin-top: 2rem;
+}
+
+.topBar {
   display: flex;
   justify-content: space-between;
-  background-color: red;
-  width: 100%;
   box-sizing: border-box;
 }
 
-.searchButton {
+.search {
   display: flex;
-  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.search > input {
+  height: 24px;
+  width: 300px;
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+}
+
+.topBar img {
+  height: 48px;
+}
+
+.bottomBar {
+  border-top: 1px solid var(--accent-color);
+  display: flex;
+  gap: 1rem;
+}
+
+.topBar,
+.bottomBar {
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+a {
+  color: black;
 }

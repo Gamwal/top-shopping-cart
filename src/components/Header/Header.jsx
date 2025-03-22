@@ -1,14 +1,36 @@
 import styles from "./Header.module.css";
+import Icon from "@mdi/react";
+import { mdiMagnify } from "@mdi/js";
+import { mdiMenu } from "@mdi/js";
+import { mdiCart } from "@mdi/js";
+import { mdiBell } from "@mdi/js";
+import { mdiInformation } from "@mdi/js";
+import { mdiFaceManProfile } from "@mdi/js";
 
 export default function Header() {
   return (
-    <div className={styles.bar}>
-      <div>Store Logo</div>
-      <div>
-        <input type="text" />
-        <div className={styles.searchButton}>SearchIcon</div>
+    <div className={styles.header}>
+      <div className={styles.topBar}>
+        <img src="/appicon.png" alt="store icon" />
+        <div className={styles.search}>
+          <input type="text" placeholder="Search" />
+          <Icon path={mdiMagnify} size={1} />
+        </div>
+        <div className={styles.icons}>
+          <Icon path={mdiCart} size={1} />
+          <Icon path={mdiBell} size={1} />
+          <Icon path={mdiInformation} size={1} />
+          <Icon path={mdiFaceManProfile} size={1} />
+        </div>
       </div>
-      <div>Icons</div>
+      <div className={styles.bottomBar}>
+        <Icon path={mdiMenu} size={1} />
+        <a href="">Categories</a>
+        <a href="">Bestsellers</a>
+        <a href="">Inspirations</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+      </div>
     </div>
   );
 }
