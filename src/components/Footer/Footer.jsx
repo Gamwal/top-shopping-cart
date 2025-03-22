@@ -10,6 +10,7 @@ import { FaHome } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { MdLocalPhone } from "react-icons/md";
 import { MdChatBubble } from "react-icons/md";
+import logo from "../../assets/appicon.png";
 
 export default function Footer() {
   return (
@@ -27,12 +28,14 @@ export default function Footer() {
       </div>
       <div className={styles.middle}>
         <div className={styles.column}>
-          <p>
+          <p style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <img src={logo} alt="store icon" />
             <strong>JIBOWU ONLINE</strong>
           </p>
           <p>
             Jibowu Online is your one stop shopping website that is created for
-            all to enjoy
+            all to enjoy <br /> Jibowu Online is your one stop shopping website
+            that is created for all to enjoy
           </p>
         </div>
         <div className={styles.column}>

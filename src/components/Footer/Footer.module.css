@@ -42,6 +42,10 @@
   grid-row-end: 6;
 }
 
+.middle .column:nth-child(1) img {
+  height: 1.2rem;
+}
+
 .lower {
   background-color: var(--footer-background-lower);
   display: flex;

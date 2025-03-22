@@ -6,12 +6,13 @@ import { mdiCart } from "@mdi/js";
 import { mdiBell } from "@mdi/js";
 import { mdiInformation } from "@mdi/js";
 import { mdiFaceManProfile } from "@mdi/js";
+import logo from "../../assets/appicon.png";
 
 export default function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.topBar}>
-        <img src="/appicon.png" alt="store icon" />
+        <img src={logo} alt="store icon" />
         <div className={styles.search}>
           <input type="text" placeholder="Search" />
           <Icon path={mdiMagnify} size={1} color="var(--icon-color)" />
